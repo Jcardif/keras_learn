@@ -83,10 +83,10 @@ for i in range(100):
             bestclass = n
 
     if y_test[index] == bestclass:
-        plt.title(cifar10_labels[bestclass])
+       # plt.title(cifar10_labels[bestclass])
         right += 1
     else:
-        plt.title(cifar10_labels[bestclass] + "!=" + cifar10_labels[y_test[index][0]], color='#ff0000')
+       # plt.title(cifar10_labels[bestclass] + "!=" + cifar10_labels[y_test[index][0]], color='#ff0000')
         mistake += 1
                                                                    
 #plt.show()
