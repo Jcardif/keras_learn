@@ -45,7 +45,7 @@ LOAD MODEL AND PREDICT
 '''
 
 # use ResNet
-model = load_model('cifar10_ResNet20v1_model.092.h5')
+model = load_model('keras_cifar10_trained_model.h5')
 
 # use CNN
 # model = load_model('keras_cifar10_trained_model.h5')
