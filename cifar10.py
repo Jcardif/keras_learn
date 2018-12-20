@@ -44,11 +44,8 @@ cifar10_labels = np.array([
 LOAD MODEL AND PREDICT
 '''
 
-# use ResNet
-model = load_model('keras_cifar10_trained_model.h5')
-
 # use CNN
-# model = load_model('keras_cifar10_trained_model.h5')
+model = load_model('keras_cifar10_trained_model.h5')
 
     
 def convertCIFER10Data(image):
@@ -65,7 +62,7 @@ mistake = 0
 
 for i in range(100):
     index = random.randint(0, x_test.shape[0])
-    image = x_test[index]
+    image = x_test[0]
     data = convertCIFER10Data(image)
 
     #plt.subplot(10, 10, i+1)
