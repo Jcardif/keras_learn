@@ -58,7 +58,7 @@ def convertCIFER10Data(image):
     c[0] = img
     return c
 
-plt.figure(figsize=(16,16))
+#plt.figure(figsize=(16,16))
 
 right = 0
 mistake = 0
@@ -89,7 +89,7 @@ for i in range(100):
         plt.title(cifar10_labels[bestclass] + "!=" + cifar10_labels[y_test[index][0]], color='#ff0000')
         mistake += 1
                                                                    
-plt.show()
+#plt.show()
 print("The number of correct answers:", right)
 print("The number of mistake:", mistake)
 print("A correct answer rate:", right/(mistake + right)*100, '%')
