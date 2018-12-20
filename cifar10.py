@@ -68,9 +68,9 @@ for i in range(100):
     image = x_test[index]
     data = convertCIFER10Data(image)
 
-    plt.subplot(10, 10, i+1)
-    plt.imshow(image)
-    plt.axis('off')
+    #plt.subplot(10, 10, i+1)
+    #plt.imshow(image)
+    #plt.axis('off')
 
     ret = model.predict(data, batch_size=1) 
     #print(ret)
